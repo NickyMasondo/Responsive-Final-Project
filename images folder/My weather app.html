@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <!-- saved from url=(0042)https://nicky-week-7-homework.netlify.app/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./My weather app_files/css2" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link href="./My weather app_files/css2" rel="stylesheet" />
     <script src="./My weather app_files/axios.min.js"></script>
-    <link rel="stylesheet" href="./My weather app_files/styles.css">
+    <link rel="stylesheet" href="./My weather app_files/styles.css" />
     <title>My weather app</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
         <form class="search-form" id="search-form">
-          <input type="search" placeholder="Enter a city.." required="" id="search-form-input" class="search-form-input">
-          <input type="submit" value="Search" class="search-form-button">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required=""
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
@@ -25,93 +33,115 @@
             <p class="weather-app-details">
               <span id="time">Sunday 18:30</span>,
               <span id="description">clear sky</span>
-              <br>
+              <br />
               Humidity: <strong id="humidity">70%</strong>, Wind:
               <strong id="wind-speed">3.9km/h</strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
-            <div id="icon"><img src="./My weather app_files/clear-sky-night.png" class="weather-app-icon"></div>
+            <div id="icon">
+              <img src="My weather app.html" class="weather-app-icon" />
+            </div>
 
             <div class="weather-app-temperature" id="temperature">17</div>
             <div class="weather-app-unit">°C</div>
           </div>
         </div>
         <div class="weather-forecast" id="forecast">
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Sun</div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Sun</div>
 
-        <img src="./My weather app_files/clear-sky-day.png" class="weather-forecast-icon">
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>20º</strong>
+            <img
+              src="./My weather app_files/clear-sky-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>20º</strong>
+              </div>
+              <div class="weather-forecast-temperature">13º</div>
+            </div>
           </div>
-          <div class="weather-forecast-temperature">13º</div>
-        </div>
-      </div>
-    
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Mon</div>
 
-        <img src="./My weather app_files/clear-sky-day.png" class="weather-forecast-icon">
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>21º</strong>
-          </div>
-          <div class="weather-forecast-temperature">14º</div>
-        </div>
-      </div>
-    
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Tue</div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Mon</div>
 
-        <img src="./My weather app_files/clear-sky-day.png" class="weather-forecast-icon">
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>22º</strong>
+            <img
+              src="./My weather app_files/clear-sky-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>21º</strong>
+              </div>
+              <div class="weather-forecast-temperature">14º</div>
+            </div>
           </div>
-          <div class="weather-forecast-temperature">14º</div>
-        </div>
-      </div>
-    
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Wed</div>
 
-        <img src="./My weather app_files/few-clouds-day.png" class="weather-forecast-icon">
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>23º</strong>
-          </div>
-          <div class="weather-forecast-temperature">14º</div>
-        </div>
-      </div>
-    
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Thu</div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tue</div>
 
-        <img src="./My weather app_files/clear-sky-day.png" class="weather-forecast-icon">
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>22º</strong>
+            <img
+              src="./My weather app_files/clear-sky-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>22º</strong>
+              </div>
+              <div class="weather-forecast-temperature">14º</div>
+            </div>
           </div>
-          <div class="weather-forecast-temperature">17º</div>
+
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Wed</div>
+
+            <img
+              src="./My weather app_files/few-clouds-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>23º</strong>
+              </div>
+              <div class="weather-forecast-temperature">14º</div>
+            </div>
+          </div>
+
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Thu</div>
+
+            <img
+              src="./My weather app_files/clear-sky-day.png"
+              class="weather-forecast-icon"
+            />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>22º</strong>
+              </div>
+              <div class="weather-forecast-temperature">17º</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
       </main>
       <footer>
         <p>
           This project was coded by
-          <a href="https://github.com/NickyMasondo" target="_blank">Sinikeziwe Masondo</a>
+          <a href="https://github.com/NickyMasondo" target="_blank"
+            >Sinikeziwe Masondo</a
+          >
           and is
           <a href="https://github.com/NickyMasondo/Nicky" target="_blank">
-            open-sourced on GitHub</a>
+            open-sourced on GitHub</a
+          >
           and
-          <a href="https://nicky-week-7-homework.netlify.app/" target="_blank">hosted on Netlify</a>
+          <a href="https://nicky-week-7-homework.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
         </p>
       </footer>
     </div>
-  
-  <script src="./My weather app_files/index.js"></script>
 
-</body></html>
+    <script src="./My weather app_files/index.js"></script>
+  </body>
+</html>
